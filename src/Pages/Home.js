@@ -4,7 +4,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import Card from "../Components/Card/Card";
 export default function Home() {
- 
   return (
     <div className="body-cntr">
       <div className="header-cntr">
@@ -43,9 +42,21 @@ export default function Home() {
       </div>
 
       <div className="card-container">
-        <Card contents={"This certification ensures the compliance of mandatory requirements to be fulfilled in order for a product to be labelled and sold as organic. This also allows for the product to be legally exported to international countries as it meets the international standards for consumption. The Canada Organic certification needs to be renewed every vear"} />
-        <Card contents={"This certification ensures the compliance of mandatory requirements to be fulfilled in order for a product to be labelled and sold as organic. This also allows for the product to be legally exported to international countries as it meets the international standards for consumption. The Canada Organic certification needs to be renewed every vear"} />
-        <Card contents={"This certification ensures the compliance of mandatory requirements to be fulfilled in order for a product to be labelled and sold as organic. This also allows for the product to be legally exported to international countries as it meets the international standards for consumption. The Canada Organic certification needs to be renewed every vear"} />
+        <Card
+          contents={
+            "This certification ensures the compliance of mandatory requirements to be fulfilled in order for a product to be labelled and sold as organic. This also allows for the product to be legally exported to international countries as it meets the international standards for consumption. The Canada Organic certification needs to be renewed every vear"
+          }
+        />
+        <Card
+          contents={
+            "This certification ensures the compliance of mandatory requirements to be fulfilled in order for a product to be labelled and sold as organic. This also allows for the product to be legally exported to international countries as it meets the international standards for consumption. The Canada Organic certification needs to be renewed every vear"
+          }
+        />
+        <Card
+          contents={
+            "This certification ensures the compliance of mandatory requirements to be fulfilled in order for a product to be labelled and sold as organic. This also allows for the product to be legally exported to international countries as it meets the international standards for consumption. The Canada Organic certification needs to be renewed every vear"
+          }
+        />
       </div>
       <button className="view-more-btn">view more</button>
       <div className="add-banner-cntr">
