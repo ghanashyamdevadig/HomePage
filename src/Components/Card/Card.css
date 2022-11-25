@@ -1,0 +1,31 @@
+.card-contr {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 1em;
+    height: 32.5rem;
+    border-radius: 1em;
+}
+
+
+.card-image {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-logo {
+    height: 60%;
+    /* width: 90%; */
+}
+
+.card-contents {
+    height: 50%;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.card-text {
+color: rgb(107, 106, 105);
+line-height: 1.5em;
+word-spacing: normal;
+}
