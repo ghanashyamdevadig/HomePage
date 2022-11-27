@@ -3,7 +3,92 @@ import "./Home.css";
 import Card from "../Components/Card/Card";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+
 export default function Home() {
+  const responsive = {
+    0: { items: 1 },
+    568: { items: 2 },
+    1024: { items: 3 },
+  };
+  const items = [
+    <div className="item" data-value="1">
+      <img
+        className="header-logo"
+        src={require("../Assets/Images/Moo-Beyond-Logo-Final 1.png")}
+        alt=""
+      />
+      <p className="text-organic">
+        Moo Beyond 100% organic A2 ghee comes backed with major testing and
+        certifications to verify its authenticity. These certifications matter
+        to validate an original and natural product and set it aside from other
+        brands and products. We are serious about how we can give back to
+        society and prepared to show proof of it.
+      </p>
+      <p className="commenter-name">Manja</p>
+    </div>,
+    <div className="item" data-value="2">
+      <img
+        className="header-logo"
+        src={require("../Assets/Images/Moo-Beyond-Logo-Final 1.png")}
+        alt=""
+      />
+      <p className="text-organic">
+        Moo Beyond 100% organic A2 ghee comes backed with major testing and
+        certifications to verify its authenticity. These certifications matter
+        to validate an original and natural product and set it aside from other
+        brands and products. We are serious about how we can give back to
+        society and prepared to show proof of it.
+      </p>
+      <p className="commenter-name">Manja</p>
+    </div>,
+    <div className="item" data-value="3">
+      <img
+        className="header-logo"
+        src={require("../Assets/Images/Moo-Beyond-Logo-Final 1.png")}
+        alt=""
+      />
+      <p className="text-organic">
+        Moo Beyond 100% organic A2 ghee comes backed with major testing and
+        certifications to verify its authenticity. These certifications matter
+        to validate an original and natural product and set it aside from other
+        brands and products. We are serious about how we can give back to
+        society and prepared to show proof of it.
+      </p>
+      <p className="commenter-name">Manja</p>
+    </div>,
+    <div className="item" data-value="4">
+      <img
+        className="header-logo"
+        src={require("../Assets/Images/Moo-Beyond-Logo-Final 1.png")}
+        alt=""
+      />
+      <p className="text-organic">
+        Moo Beyond 100% organic A2 ghee comes backed with major testing and
+        certifications to verify its authenticity. These certifications matter
+        to validate an original and natural product and set it aside from other
+        brands and products. We are serious about how we can give back to
+        society and prepared to show proof of it.
+      </p>
+      <p className="commenter-name">Manja</p>
+    </div>,
+    <div className="item" data-value="5">
+      <img
+        className="header-logo"
+        src={require("../Assets/Images/Moo-Beyond-Logo-Final 1.png")}
+        alt=""
+      />
+      <p className="text-organic">
+        Moo Beyond 100% organic A2 ghee comes backed with major testing and
+        certifications to verify its authenticity. These certifications matter
+        to validate an original and natural product and set it aside from other
+        brands and products. We are serious about how we can give back to
+        society and prepared to show proof of it.
+      </p>
+      <p className="commenter-name">Manja</p>
+    </div>,
+  ];
   // const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
   return (
@@ -72,25 +157,24 @@ export default function Home() {
         </p>
       </div>
 
-      
-        <div className="card-container">
-          <Card
-            contents={
-              "This certification ensures the compliance of mandatory requirements to be fulfilled in order for a product to be labelled and sold as organic. This also allows for the product to be legally exported to international countries as it meets the international standards for consumption. The Canada Organic certification needs to be renewed every vear"
-            }
-          />
-          <Card
-            contents={
-              "This certification ensures the compliance of mandatory requirements to be fulfilled in order for a product to be labelled and sold as organic. This also allows for the product to be legally exported to international countries as it meets the international standards for consumption. The Canada Organic certification needs to be renewed every vear"
-            }
-          />
-          <Card
-            contents={
-              "This certification ensures the compliance of mandatory requirements to be fulfilled in order for a product to be labelled and sold as organic. This also allows for the product to be legally exported to international countries as it meets the international standards for consumption. The Canada Organic certification needs to be renewed every vear"
-            }
-          />
-        </div>
-  
+      <div className="card-container">
+        <Card
+          contents={
+            "This certification ensures the compliance of mandatory requirements to be fulfilled in order for a product to be labelled and sold as organic. This also allows for the product to be legally exported to international countries as it meets the international standards for consumption. The Canada Organic certification needs to be renewed every vear"
+          }
+        />
+        <Card
+          contents={
+            "This certification ensures the compliance of mandatory requirements to be fulfilled in order for a product to be labelled and sold as organic. This also allows for the product to be legally exported to international countries as it meets the international standards for consumption. The Canada Organic certification needs to be renewed every vear"
+          }
+        />
+        <Card
+          contents={
+            "This certification ensures the compliance of mandatory requirements to be fulfilled in order for a product to be labelled and sold as organic. This also allows for the product to be legally exported to international countries as it meets the international standards for consumption. The Canada Organic certification needs to be renewed every vear"
+          }
+        />
+      </div>
+
       <button className="view-more-btn">view more</button>
       <div className="banner-cntr">
         <div className="add-banner-cntr">
@@ -146,19 +230,18 @@ export default function Home() {
               </div>
 
               <div className="prd-right-contr">
-                
-               <div className="bill-cntr">
-               <img
-                  className="bill-image"
-                  src={require("../Assets/Images/gee-box.png")}
-                />
-               </div>
-               <div className="bill-cntr">
-               <img
-                  className="bill-image"
-                  src={require("../Assets/Images/Group 186.png")}
-                />
-               </div>
+                <div className="bill-cntr">
+                  <img
+                    className="bill-image"
+                    src={require("../Assets/Images/gee-box.png")}
+                  />
+                </div>
+                <div className="bill-cntr">
+                  <img
+                    className="bill-image"
+                    src={require("../Assets/Images/Group 186.png")}
+                  />
+                </div>
               </div>
             </div>
             <div className="product-descr">
@@ -233,6 +316,98 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="banner-points">
+        <div style={{}}>
+          <img
+            className="point-logo"
+            src={require("../Assets/Images/Moo-Beyond-Logo-Final 1.png")}
+            alt=""
+          />
+        </div>
+        <h1 style={{ backgroundColor: "green" }}>THE MOO BEYOND APPROACH</h1>
+        <div className="points">
+          {[1, 2, 3, 4, 5, 6].map((item, index) => {
+            return (
+              <div className={`point-${index + 1}`}>
+                <h3 className="point-heading">100% ORGANIC </h3>
+                <p className="point-description">
+                  Moo Beyond Ghee Is 100% Organic And Uses Naturally Sourced
+                  Ingredients
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <div className="testimonial-container">
+        <h1>OUR TESTIMONIALS</h1>
+        <p className="testimoial-description">
+          Hear from our frequent clients, consumers, and partners we have been
+          working with for several years.{" "}
+        </p>
+        <p className="testimoial-description">
+          Our work speaks for itself, and clients have only praises for us.
+        </p>
+        <AliceCarousel
+          disableButtonsControls={true}
+          disableDotsControls={true}
+          mouseTracking
+          items={items}
+          responsive={responsive}
+          controlsStrategy="alternate"
+        />
+        <div>
+          {/* <img src={require("../Assets/Images/rightarrow.jpeg")}/>
+          <img src={require("../Assets/Images/leftarrow.jpeg")}/> */}
+        </div>
+      </div>
+
+      <div className="footer-container">
+        <div className="footer-sub-contr">
+          <div>
+            <div>
+              <img
+                className="footer-logo"
+                src={require("../Assets/Images/Moo-Beyond-Logo-Final 1.png")}
+                alt=""
+              />
+            </div>
+            <strong>
+              Moo Beyond is an Organic Dairy Brand of Jayalakshmi Farms, India.
+            </strong>
+            <p>
+              Our farm is located on the lush grasslands of Mysore, Karnataka
+              region. Our flawless dairy production sets the benchmark of
+              excellence for your everyday happy life.
+            </p>
+          </div>
+        </div>
+        <div className="footer-sub-contr follow-ups-links">
+          <div className="quick-calls">
+            <h3>QUICK LINKS</h3>
+            <p>1</p>
+            <p>1</p>
+            <p>1</p>
+            <p>1</p>
+          </div>
+          <div className="reach-us">
+            <h3>REACH US</h3>
+            <p>1</p>
+            <p>1</p>
+            <p>1</p>
+            <p>1</p>
+          </div>
+        </div>
+        <div className="footer-sub-contr">
+          <h3>follow us</h3>
+          <div className="follw-icon-contr">
+            <p>1</p>
+            <p>1</p>
+            <p>1</p>
+          </div>
+        </div>
+       
       </div>
     </div>
   );
