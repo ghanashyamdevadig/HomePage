@@ -28,6 +28,11 @@
     margin: 0;
     padding: 0;
     background-color: rebeccapurple;
+    width: 100%;
+}
+
+.back-img{
+    height: 100% !important;
 }
 
 .second-cntr{
@@ -39,7 +44,7 @@
 }
 
 .second-back-cntr{
-    width: 80%;
+    width: 100%;
     height: 11rem;
     background-color: #00522C;
 }
@@ -60,8 +65,10 @@
     background-color: #6CBF3C;
     color: white;
     border: 0;
-    height: 2.5em;
+    height: 3.5em;
     width: 8%;
+    font-weight: bolder;
+    font-size: 1.2em;
 }
 
 .card-box{
@@ -73,7 +80,8 @@
 .card-container {
     display: flex;
     padding: 1em;
-    width: 80%;
+    justify-content: space-between;
+    width: 100%;
   
 }
 
@@ -84,12 +92,14 @@
 }
 
 .add-banner-cntr {
-    width: 75%;
+    width: 100%;
+  
     margin-top: 2em;
     height: 48rem;
     display: flex;
     padding-right: 2em;
     padding-left: 2em;
+    padding-top: 3em;
     justify-content: space-between;
     align-items: center;
     /* padding: 1em; */
@@ -239,9 +249,20 @@ font-family: 'Roboto';
 }
 
 .bill-image{
-    border: 1px solid black;
-    height: 30%;
+    /* border: 1px solid black;
+    padding: 0.2em; */
+    height: 100%;
     /* margin: 1em; */
+}
+
+.bill-cntr{
+    padding: 1em;
+    border: 1px solid rgb(0, 0, 0);
+    height: 30%;
+    width: 50%;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
 }
 
 .ghee-prd-main {

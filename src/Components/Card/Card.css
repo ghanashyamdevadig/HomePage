@@ -1,8 +1,10 @@
 .card-contr {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 1em;
-    height: 32.5rem;
+    margin: 2em;
+    height: 35.5rem;
     border-radius: 1em;
+    /* width: 60rem !important; */
+    /* background-color: aqua; */
 }
 
 
