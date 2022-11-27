@@ -24,8 +24,35 @@
     display: flex;
 }
 
-.main-container {
-    height: 10vh !important;
+.main-back-cntr{
+    margin: 0;
+    padding: 0;
+    background-color: rebeccapurple;
+}
+
+.second-cntr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.second-back-cntr{
+    width: 80%;
+    height: 11rem;
+    background-color: #00522C;
+}
+
+.organic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-organic{
+    width:65%;
 }
 
 .view-more-btn {
@@ -37,99 +64,29 @@
     width: 8%;
 }
 
+.card-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-container {
     display: flex;
     padding: 1em;
+    width: 80%;
+  
 }
 
-.nav-bar {
-    width: 35%;
+.banner-cntr{
     display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    position: absolute;
-    margin-top: 1em;
-}
-
-.maim-backg-img {
-    display: flex;
-    margin-top: 8%;
-}
-
-.milkCan-left {
-    display: flex;
-    margin: -48% 0 10% 45% !important;
-}
-
-.milkCan-right {
-    display: flex;
-    margin: -48% 0 0 61.5% !important;
-}
-
-.main-cntr-bottom {
-    margin: -0.8% 0 0% 0 !important;
-}
-
-.gee-order {
-    display: flex;
-    justify-content: space-between;
-}
-
-.gee-box {
-    display: flex;
-    margin: -21% 0 0% 6%;
-}
-
-
-
-.order-now {
-    display: flex;
-    width: 10.4em;
-    height: 3.05em;
-    margin: -7% 13% 0 0;
-}
-
-.text-box {
-    display: flex;
-    background-color: brown;
-    margin: -13% 0 0 30%;
-}
-
-.seal-box {
-    display: flex;
-    margin: -2% 0 0 20%;
-}
-
-.text {
-    width: 100%;
-}
-
-.long-text {
-    display: flex;
-    margin: 3% 0 0 20%;
-    width: 60%;
-}
-
-.young-male {
-    display: flex;
-    margin: -42% 0 0 52% !important;
-}
-
-.rectangle-box {
-    margin: 1% 2% 3% 58% !important;
-}
-
-.man-ghee {
-    margin: -28% 2% 4% 58% !important;
-}
-
-.mother-daug {
-    margin: -29% 2% 5.2% 16% !important;
+    justify-content: center;
+    align-items: center;
 }
 
 .add-banner-cntr {
+    width: 75%;
     margin-top: 2em;
-    height: 55rem;
+    height: 48rem;
     display: flex;
     padding-right: 2em;
     padding-left: 2em;
@@ -155,7 +112,7 @@
 
 .banner-lcontr {
     /* display: flex; */
-    width: 30%;
+    width: 50%;
     text-align: left;
     line-height: 1.5em;
     word-spacing: normal;
@@ -178,7 +135,7 @@
 
 .banner-points-image {
     height: 80%;
-    width: 70%;
+    width: 80%;
 }
 
 .product-contr {
@@ -189,11 +146,17 @@
 
 .product-info {
     width: 65%;
-    /* border: 1px solid rgb(17, 16, 16); */
-    display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
+display: flex;
 }
+
+/* .our-prd-cntr{
+    width: 80%;
+    display: flex;
+    justify-content: center !important;
+    align-content: center !important;
+    flex-direction: column;
+    
+  } */
 
 .product-descr {
     margin-top: 3rem;
@@ -210,7 +173,14 @@
     margin: 0;
     line-height: 1.5em;
 word-spacing: normal;
+font-size: 0.9em;
+font-family: 'Roboto';
+}
 
+.text-clr{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.9em;
+    font-family: 'Roboto';
 }
 
 

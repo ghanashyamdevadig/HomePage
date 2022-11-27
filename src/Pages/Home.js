@@ -8,10 +8,10 @@ export default function Home() {
     <div className="body-cntr">
       <div className="header-cntr">
         <div className="nav-container">
-          <p className="nav-items">Hone</p>
-          <p className="nav-items">Hone</p>
-          <p className="nav-items">Hone</p>
-          <p className="nav-items">Hone</p>
+          <p className="nav-items">Home</p>
+          <p className="nav-items">Home</p>
+          <p className="nav-items">Home</p>
+          <p className="nav-items">Home</p>
         </div>
 
         <div className="header-img">
@@ -23,16 +23,28 @@ export default function Home() {
         </div>
 
         <div className="nav-container">
-          <p className="nav-items">Hone</p>
-          <p className="nav-items">Hone</p>
-          <p className="nav-items">Hone</p>
-          <p className="nav-items">Hone</p>
+          <p className="nav-items">Home</p>
+          <p className="nav-items">Home</p>
+          <p className="nav-items">Home</p>
+          <p className="nav-items">Home</p>
         </div>
       </div>
+      <div className="main-back-cntr">
+      <img
+            className="back-img"
+            src={require("../Assets/Images/Mask Group.png")}
+            alt=""
+          />
+      </div>
+      <div className="second-cntr">
+      <div className="second-back-cntr">
 
-      <div>
+      </div>
+      </div>
+      <div className="organic">
+
         <h1>100% CERTIFIED ORGANIC</h1>
-        <p>
+        <p className="text-organic">
           Moo Beyond 100% organic A2 ghee comes backed with major testing and
           certifications to verify its authenticity. These certifications matter
           to validate an original and natural product and set it aside from
@@ -41,6 +53,7 @@ export default function Home() {
         </p>
       </div>
 
+<div className="card-box">
       <div className="card-container">
         <Card
           contents={
@@ -58,7 +71,9 @@ export default function Home() {
           }
         />
       </div>
+      </div>
       <button className="view-more-btn">view more</button>
+      <div className="banner-cntr">
       <div className="add-banner-cntr">
         <div className="banner-lcontr">
           <h2>THE MOO BEYOND EDGE</h2>
@@ -98,6 +113,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </div>
+      <div className="product">
+      <div className="our-prd-cntr">
       <h2>OUR PRODUCT</h2>
       <div className="product-contr">
         <div className="product-info">
@@ -129,42 +147,39 @@ export default function Home() {
           </div>
           <div>
             <p className="point">
-              1.Rich in antioxidants and vital vitamins like B2. B12. B6. C. E.
-              K and fattv acids like Omega-3. Omega-6 as well as healthy amino
+              1.<span className="text-clr">Rich in antioxidants and vital vitamins like </span>B2, B1, B6, C, E,
+              K and fatty acids like Omega-3, Omega-6 as well as healthy amino
               acids.
             </p>
             <p className="point">
-              2.Moo Beyond organic A ghee can nourish the body, Improve brain
-              tunction, hone health increase immunity, strength en the and
-              enhance digestion and imorove liver neatn.
+              2.<span className="text-clr">Moo Beyond organic A2 ghee can nourish the body, Improve brain
+              function, </span>bone health, increase immunity, strengthen the heart and
+              enhance digestion and improve liver health.
             </p>
             <p className="point">
-              3.Great source of nutrition for pregnant women, under-nourished
-              children and adolescents, health tood enthusiasts, diabetics and
-              people with heart disease and dietary restrictions as well as Keto
+              3.<span className="text-clr">Great source of</span> nutrition for pregnant women, under-nourished
+              children<span className="text-clr"> and adolescents, health food enthusiasts,</span> diabetics and
+              people with heart disease and dietary restrictions<span className="text-clr"> as well as</span> Keto
               Friendly.
             </p>
             <p className="point">
-              4.Cosmetic adolications like moisturising the skin. babv massage
-              oil replacement, reduce dark circles around and eves and helps
-              reiuvenate chapped lips.
+              4.Cosmetic applications <span className="text-clr">like moisturising the skin. baby massage
+              oil replacement, reduce dark circles around and eyes and helps
+              rejuvenate chapped lips.</span> 
             </p>
             <p className="point">
-              5. 100% A2 protein from ayurvedically trusted Man cows. whose milk
-              is rich in medicinal properties and increases resistance to
-              several diseases.
+              5. <span className="text-clr">100% A2 protein from</span>ayurvedically trusted Malnad Gidda and Hallikar cows. <span className="text-clr"> whose milk is rich in medicinal properties and increases resistance to several diseases.</span>
             </p>
             <p className="point">
-              5. 100% A2 protein from ayurvedically trusted Man cows. whose milk
-              is rich in medicinal properties and increases resistance to
-              several diseases.
+              6. <span className="text-clr">100% </span> manufactured and packaged in-house <span className="text-clr">by Jayalakshmi Farms, the parent company of the Moo Beyond.</span>
             </p>
             <p className="point">
-              5. 100% A2 protein from ayurvedically trusted Moo Bevond A2 ghee
-              comes with a shelf- ife of 1 veal.
+              7.Moo Beyond A2 ghee comes with a shelf life of 1 year
             </p>
           </div>
         </div>
+      </div>
+      </div>
       </div>
     </div>
   );
