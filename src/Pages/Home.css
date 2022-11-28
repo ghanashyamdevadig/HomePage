@@ -335,6 +335,9 @@
   border-color: #ffffff;
   border-top: none;
   border-left: none;
+  /* background-color: red; */
+  height: 8rem;
+  /* height: 20%; */
 }
 
 .point-2 {
@@ -343,6 +346,8 @@
   border-color: #ffffff;
   border-top: none;
   border-right: none;
+  /* background-color: red; */
+  height: 8rem;
 }
 
 .point-3 {
@@ -351,6 +356,9 @@
   border-color: #ffffff;
   border-left: none;
   border-top: none;
+  /* background-color: red; */
+  height: 8rem;
+  /* height: 30%; */
 }
 
 .point-4 {
@@ -359,6 +367,9 @@
   border-color: #ffffff;
   border-right: none;
   border-top: none;
+  /* background-color: red; */
+  height: 8rem;
+  /* height: 30%; */
 }
 
 .point-5 {
@@ -368,6 +379,9 @@
   border-bottom: none;
   border-left: none;
   border-top: none;
+  /* background-color: red; */
+  height: 8rem;
+  /* height: 30%; */
 }
 
 .point-6 {
@@ -377,6 +391,9 @@
   border-bottom: none;
   border-right: none;
   border-top: none;
+  /* background-color: red; */
+  height: 8rem;
+  /* height: 30%; */
 }
 
 .point-description {
@@ -430,7 +447,7 @@
   background-image: url(../Assets//Images/BottomBanner.png);
   background-color: #cccccc;
   /* Used if the image is unavailable */
-  height: 300px;
+  height: 400px;
   width: 100vw !important;
   /* You must set a specified height */
   /* background-position: center; */
@@ -489,8 +506,10 @@
 
 .polygon-box {
 display: flex;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
+/* background-color: red; */
+width: 50%;
 }
 
 .polygon {

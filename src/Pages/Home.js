@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Home.css";
 import Card from "../Components/Card/Card";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -7,6 +7,14 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 export default function Home() {
+  const [points,setPoints]=useState([
+    {heading:"100% ORGANIC",description:" Moo Beyond Ghee Is 100% Organic And Uses Naturally Sourced Ingredients",image:""},
+    {heading:"Happy &amp; Healthy Cows",description:" Openly grazed and grass-fed cows of Malnad Gidda and Hallikar Breeds that produce the highest quality of A2 protein.",image:""},
+    {heading:"Farm fresh",description:"All raw material used is purely sourced in-house from our 120 acres of farm land.",image:""},
+    {heading:"Antibiotic and Hormone Free",description:"Natural A2 ghee, free of additives, chemicals. Certified organic and trusted by top Ayurvedic companies.",image:""},
+    {heading:"hygienic process",description:"We follow strict sanitary regulations to maintain and quality and consistency of our product",image:""},
+    {heading:"Organic Fodder",description:"Use of organic, natural fodder for our cows as per USDA and FDA regulations.",image:""},
+  ])
   const responsive = {
     0: { items: 1 },
     568: { items: 2 },
@@ -127,19 +135,19 @@ export default function Home() {
             <img src={require("../Assets/Images/Mask Group.png")} />
           </div>
           <div>
-            <img src={require("../Assets/Images/Mask Group.png")}  />
-          </div>
-          <div>
-            <img src={require("../Assets/Images/Mask Group.png")}  />
-          </div>
-          <div>
-            <img src={require("../Assets/Images/Mask Group.png")}  />
+            <img src={require("../Assets/Images/Mask Group.png")} />
           </div>
           <div>
             <img src={require("../Assets/Images/Mask Group.png")} />
           </div>
           <div>
-            <img src={require("../Assets/Images/Mask Group.png")}  />
+            <img src={require("../Assets/Images/Mask Group.png")} />
+          </div>
+          <div>
+            <img src={require("../Assets/Images/Mask Group.png")} />
+          </div>
+          <div>
+            <img src={require("../Assets/Images/Mask Group.png")} />
           </div>
         </Carousel>
       </div>
@@ -327,13 +335,12 @@ export default function Home() {
         </div>
         <h1 style={{ backgroundColor: "green" }}>THE MOO BEYOND APPROACH</h1>
         <div className="points">
-          {[1, 2, 3, 4, 5, 6].map((item, index) => {
+          {points?.map((item, index) => {
             return (
               <div className={`point-${index + 1}`}>
-                <h3 className="point-heading">100% ORGANIC </h3>
+                <h3 className="point-heading">{item?.heading} </h3>
                 <p className="point-description">
-                  Moo Beyond Ghee Is 100% Organic And Uses Naturally Sourced
-                  Ingredients
+                  {item.description}
                 </p>
               </div>
             );
@@ -387,66 +394,65 @@ export default function Home() {
           <div className="quick-calls">
             <h3>QUICK LINKS</h3>
             <div className="polygon-div">
-                <div className="polygon-box">
-            <img
-                className="polygon"
-                src={require("../Assets/Images/Polygon 9.png")}
-                alt=""
-              />
-              <p className="details"> About</p>
+              <div className="polygon-box">
+                <img
+                  className="polygon"
+                  src={require("../Assets/Images/Polygon 9.png")}
+                  alt=""
+                />
+                <p className="details"> About</p>
               </div>
               <div className="polygon-box">
-            <img
-                className="polygon"
-                src={require("../Assets/Images/Polygon 9.png")}
-                alt=""
-              />
-              <p className="details"> About</p>
+                <img
+                  className="polygon"
+                  src={require("../Assets/Images/Polygon 9.png")}
+                  alt=""
+                />
+                <p className="details"> About</p>
               </div>
               <div className="polygon-box">
-            <img
-                className="polygon"
-                src={require("../Assets/Images/Polygon 9.png")}
-                alt=""
-              />
-              <p className="details"> About</p>
+                <img
+                  className="polygon"
+                  src={require("../Assets/Images/Polygon 9.png")}
+                  alt=""
+                />
+                <p className="details"> About</p>
               </div>
               <div className="polygon-box">
-            <img
-                className="polygon"
-                src={require("../Assets/Images/Polygon 9.png")}
-                alt=""
-              />
-              <p className="details"> About</p>
+                <img
+                  className="polygon"
+                  src={require("../Assets/Images/Polygon 9.png")}
+                  alt=""
+                />
+                <p className="details"> About</p>
               </div>
               <div className="polygon-box">
-            <img
-                className="polygon"
-                src={require("../Assets/Images/Polygon 9.png")}
-                alt=""
-              />
-              <p className="details"> About</p>
+                <img
+                  className="polygon"
+                  src={require("../Assets/Images/Polygon 9.png")}
+                  alt=""
+                />
+                <p className="details"> About</p>
               </div>
-              </div>
+            </div>
           </div>
           <div className="reach-us">
             <h3>REACH US</h3>
             <img
-                className="contact-us"
-                src={require("../Assets/Images/phone 1.png")}
-                alt=""
-              />
-             <img
-                className="contact-us"
-                src={require("../Assets/Images/Email.png")}
-                alt=""
-              />
-             <img
-                className="contact-us"
-                src={require("../Assets/Images/Location.png")}
-                alt=""
-              />
-        
+              className="contact-us"
+              src={require("../Assets/Images/phone 1.png")}
+              alt=""
+            />
+            <img
+              className="contact-us"
+              src={require("../Assets/Images/Email.png")}
+              alt=""
+            />
+            <img
+              className="contact-us"
+              src={require("../Assets/Images/Location.png")}
+              alt=""
+            />
           </div>
         </div>
         <div className="footer-sub-contr">
@@ -457,7 +463,6 @@ export default function Home() {
             <p>1</p>
           </div>
         </div>
-       
       </div>
     </div>
   );
