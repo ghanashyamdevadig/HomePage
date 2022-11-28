@@ -124,22 +124,22 @@ export default function Home() {
           showIndicators={true}
         >
           <div>
-            <img src="https://img.freepik.com/free-psd/horizontal-banner-hotel-resort_23-2148843057.jpg?w=2000&t=st=1669523012~exp=1669523612~hmac=20889db1ada3d9c5e07c11293ed3eed4bc5dfa21ecd05eb529a9e1ecfd7c17c2" />
+            <img src={require("../Assets/Images/Mask Group.png")} />
           </div>
           <div>
-            <img src="https://img.freepik.com/free-psd/horizontal-banner-hotel-resort_23-2148843057.jpg?w=2000&t=st=1669523012~exp=1669523612~hmac=20889db1ada3d9c5e07c11293ed3eed4bc5dfa21ecd05eb529a9e1ecfd7c17c2" />
+            <img src={require("../Assets/Images/Mask Group.png")}  />
           </div>
           <div>
-            <img src="https://img.freepik.com/free-psd/horizontal-banner-hotel-resort_23-2148843057.jpg?w=2000&t=st=1669523012~exp=1669523612~hmac=20889db1ada3d9c5e07c11293ed3eed4bc5dfa21ecd05eb529a9e1ecfd7c17c2" />
+            <img src={require("../Assets/Images/Mask Group.png")}  />
           </div>
           <div>
-            <img src="https://img.freepik.com/free-psd/horizontal-banner-hotel-resort_23-2148843057.jpg?w=2000&t=st=1669523012~exp=1669523612~hmac=20889db1ada3d9c5e07c11293ed3eed4bc5dfa21ecd05eb529a9e1ecfd7c17c2" />
+            <img src={require("../Assets/Images/Mask Group.png")}  />
           </div>
           <div>
-            <img src="https://img.freepik.com/free-psd/horizontal-banner-hotel-resort_23-2148843057.jpg?w=2000&t=st=1669523012~exp=1669523612~hmac=20889db1ada3d9c5e07c11293ed3eed4bc5dfa21ecd05eb529a9e1ecfd7c17c2" />
+            <img src={require("../Assets/Images/Mask Group.png")} />
           </div>
           <div>
-            <img src="https://img.freepik.com/free-psd/horizontal-banner-hotel-resort_23-2148843057.jpg?w=2000&t=st=1669523012~exp=1669523612~hmac=20889db1ada3d9c5e07c11293ed3eed4bc5dfa21ecd05eb529a9e1ecfd7c17c2" />
+            <img src={require("../Assets/Images/Mask Group.png")}  />
           </div>
         </Carousel>
       </div>
@@ -386,17 +386,67 @@ export default function Home() {
         <div className="footer-sub-contr follow-ups-links">
           <div className="quick-calls">
             <h3>QUICK LINKS</h3>
-            <p>1</p>
-            <p>1</p>
-            <p>1</p>
-            <p>1</p>
+            <div className="polygon-div">
+                <div className="polygon-box">
+            <img
+                className="polygon"
+                src={require("../Assets/Images/Polygon 9.png")}
+                alt=""
+              />
+              <p className="details"> About</p>
+              </div>
+              <div className="polygon-box">
+            <img
+                className="polygon"
+                src={require("../Assets/Images/Polygon 9.png")}
+                alt=""
+              />
+              <p className="details"> About</p>
+              </div>
+              <div className="polygon-box">
+            <img
+                className="polygon"
+                src={require("../Assets/Images/Polygon 9.png")}
+                alt=""
+              />
+              <p className="details"> About</p>
+              </div>
+              <div className="polygon-box">
+            <img
+                className="polygon"
+                src={require("../Assets/Images/Polygon 9.png")}
+                alt=""
+              />
+              <p className="details"> About</p>
+              </div>
+              <div className="polygon-box">
+            <img
+                className="polygon"
+                src={require("../Assets/Images/Polygon 9.png")}
+                alt=""
+              />
+              <p className="details"> About</p>
+              </div>
+              </div>
           </div>
           <div className="reach-us">
             <h3>REACH US</h3>
-            <p>1</p>
-            <p>1</p>
-            <p>1</p>
-            <p>1</p>
+            <img
+                className="contact-us"
+                src={require("../Assets/Images/phone 1.png")}
+                alt=""
+              />
+             <img
+                className="contact-us"
+                src={require("../Assets/Images/Email.png")}
+                alt=""
+              />
+             <img
+                className="contact-us"
+                src={require("../Assets/Images/Location.png")}
+                alt=""
+              />
+        
           </div>
         </div>
         <div className="footer-sub-contr">
