@@ -54,16 +54,22 @@ export default function Home() {
 
   const [cardData, setCardData] = useState([
     {
-      image: "https://res.cloudinary.com/dkblvak5a/image/upload/v1669729885/samples/FDA-Approved_g6tqti.png",
-      content: "This certification ensures the compliance of mandatory requirements for a product to be labelled and sold as organic, legally in national and international markets. The Cannada organic certification needs to be renewed every year.",
+      image:
+        "https://res.cloudinary.com/dkblvak5a/image/upload/v1669729885/samples/FDA-Approved_g6tqti.png",
+      content:
+        "This certification ensures the compliance of mandatory requirements for a product to be labelled and sold as organic, legally in national and international markets. The Cannada organic certification needs to be renewed every year.",
     },
     {
-      image: "https://res.cloudinary.com/dkblvak5a/image/upload/v1669729885/samples/Canada-Organic_blafy7.png",
-      content: "The Food and Drug Administration ensures safety and efficacy of a manufactured products, and it needs to be renewed every 2 years. FDA approved means the productis safe for consumption and does not contain disease-causing pathogens ",
+      image:
+        "https://res.cloudinary.com/dkblvak5a/image/upload/v1669729885/samples/Canada-Organic_blafy7.png",
+      content:
+        "The Food and Drug Administration ensures safety and efficacy of a manufactured products, and it needs to be renewed every 2 years. FDA approved means the productis safe for consumption and does not contain disease-causing pathogens ",
     },
     {
-      image: "https://res.cloudinary.com/dkblvak5a/image/upload/v1669729891/samples/India-Organic_xe8k9u.png",
-      content: "This certification ensures only raw organic materials were used to manufacture food products in India and is awarded only to organic foods that conform to the National Standards for Organic Products established in 2000",
+      image:
+        "https://res.cloudinary.com/dkblvak5a/image/upload/v1669729891/samples/India-Organic_xe8k9u.png",
+      content:
+        "This certification ensures only raw organic materials were used to manufacture food products in India and is awarded only to organic foods that conform to the National Standards for Organic Products established in 2000",
     },
   ]);
 
@@ -146,6 +152,11 @@ export default function Home() {
       <p className="commenter-name">shyam</p>
     </div>,
   ];
+
+  const items2 = cardData?.map((item, index) => {
+    return <Card image={item?.image} contents={item.content} />;
+  });
+
   // const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
   return (
@@ -153,35 +164,45 @@ export default function Home() {
       <div className="header-cntr">
         <div className="header-rectangle">
           <div className="main-div-header">
-        <div className="nav-container-left">
-          <ul>
-            <li><a href="#">HOME</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">OUR FARM</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">PRODUCT</a></li>
-          </ul>
-        </div>
+            <div className="nav-container-left">
+              <ul>
+                <li>
+                  <a href="#">HOME</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">OUR FARM</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">PRODUCT</a>
+                </li>
+              </ul>
+            </div>
 
-        <div className="header-img">
-          <img
-            className="header-logo"
-            src={require("../Assets/Images/Moo-Beyond-Logo-Final 1.png")}
-            alt=""
-          />
-              </div>
+            <div className="header-img">
+              <img
+                className="header-logo"
+                src={require("../Assets/Images/Moo-Beyond-Logo-Final 1.png")}
+                alt=""
+              />
+            </div>
 
-        <div className="nav-container-right">
-        <ul>
-            <li><a href="#">CONTACT US</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">ABOUT US</a></li>
-          </ul>
-        </div>
-        </div>
+            <div className="nav-container-right">
+              <ul>
+                <li>
+                  <a href="#">CONTACT US</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">ABOUT US</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div className="main-back-cntr">
@@ -254,12 +275,19 @@ export default function Home() {
       </div>
 
       <div className="card-container">
-       {cardData?.map((item, index)=>{
+        <AliceCarousel
+          disableButtonsControls={true}
+          disableDotsControls={true}
+          mouseTracking
+          items={items2}
+          responsive={responsive}
+          controlsStrategy="alternate"
+        />
+        {/* {cardData?.map((item, index)=>{
 return(
   <Card image={item?.image} contents={item.content}/>
 )
-       })}
-      
+       })} */}
       </div>
 
       <button className="view-more-btn">VIEW ALL</button>
@@ -342,9 +370,13 @@ return(
               </p>
               <div className="product-action-contr">
                 <div className="product-counter">
-                  <span className="action" style={{cursor:"pointer"}}>-</span>
+                  <span className="action" style={{ cursor: "pointer" }}>
+                    -
+                  </span>
                   <span className="action">1</span>
-                  <span className="action" style={{cursor:"pointer"}}>+</span>
+                  <span className="action" style={{ cursor: "pointer" }}>
+                    +
+                  </span>
                 </div>
                 <button className="product-cart-btn">ADD TO CART</button>
               </div>
@@ -423,8 +455,8 @@ return(
             return (
               <div className={`point-${index + 1}`}>
                 <div className="point-img-head">
-                <img className="point-image" src={item?.image} alt="" />
-                <h3 className="point-heading">{item?.heading} </h3>
+                  <img className="point-image" src={item?.image} alt="" />
+                  <h3 className="point-heading">{item?.heading} </h3>
                 </div>
                 <p className="point-description">{item.description}</p>
               </div>
@@ -493,7 +525,7 @@ return(
                   src={require("../Assets/Images/Polygon 9.png")}
                   alt=""
                 />
-                <p className="details" > Products</p>
+                <p className="details"> Products</p>
               </div>
               <div className="polygon-box">
                 <img
