@@ -1,0 +1,99 @@
+.saved-addr-contr{
+    /* background-color: red; */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center;
+    width: 100vw;
+    margin-top: 4em;
+}
+.addr-heading{
+    width: 60%;
+}
+.saved-addres{
+    padding: 1em;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.address-card-contr{
+    width: 60%;
+    margin-top: -1.5em;
+    border-radius: 3px !important;
+}
+.address-card{
+    background-color: #f0f8fe    ;
+    margin-top: 1em;
+    width: 96%;
+    border: 1px solid #e2e2e2;
+    padding: 1em;
+    
+}
+
+.hr-line{
+    color: lightgray;
+    width: 1px;
+}
+
+.path-text{
+   color: grey; 
+}
+
+.address-text{
+    
+    color: black;
+    /* margin-left: 0.4em; */
+}
+
+.add-addr-btn{
+    background-color:#EFBD1C;
+    height: 2.8em;
+    border: 0;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+font-size: 14px;
+font-weight: 700;
+padding: 1px 6px;
+margin: 30px 0px 0px 0px;
+}
+
+.btn-image{
+    width: 1.2em;
+    height: 1.2em;
+    font-weight: 900;
+}
+
+.card-actions{
+    display: flex;
+}
+
+.buttonText {
+    margin: 0.2em;
+    color: blue;
+    cursor: pointer;
+}
+.line{
+    margin:0.2em;
+    /* color: blue; */
+}
+
+.default-cntr{
+    display: flex;
+    justify-content: space-between;
+}
+
+.accept-image{
+    width: 1em;
+    height: 1em;
+    margin-right:0.5em ;
+}
+
+.default{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

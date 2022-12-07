@@ -1,0 +1,155 @@
+.footer-container {
+    padding: 2em;
+    background-image: url(../../Assets/Images/BottomBanner.png);
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 400px;
+    width: 100vw !important;
+    /* You must set a specified height */
+    /* background-position: center; */
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* background-position: 0%; */
+  
+    /* Do not repeat the image */
+    background-size: cover;
+    background-color: #c1c1c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+.footer-bottom-bar {
+    background-color: #00522c;
+  }
+  
+  .footer-logo {
+    width: 20%;
+    /* background-color: goldenrod; */
+  }
+  .footer-sub-contr {
+    height: 15rem;
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+  }
+  
+  .follow-ups-links {
+    display: flex;
+    flex-direction: row !important;
+    margin: 1em;
+  }
+  
+  .reach-us,
+  .quick-calls {
+    margin-left: 6em;
+    cursor: pointer;
+  }
+  
+  .follw-icon-contr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .polygon-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .text-1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .text-2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .text-8 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .polygon {
+    width: 0.4rem;
+    min-height: 0.6em;
+  }
+  
+  .details {
+    padding-left: 1em;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    padding: 0.6em;
+  }
+
+.social-face{
+    color: #38539B;
+    height: 1.5em;
+    /* background-color: #ffffff; */
+   }
+   
+   .social-twitter{
+     color:  #1C9DEB;
+     height: 1.5em;
+     /* background-color: #ffffff; */
+   }
+   
+   .footer-end {
+     background-color: #00522c;
+     min-height: 4rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     font-family: "Roboto";
+     font-style: normal;
+     font-weight: 400;
+   }
+
+   @media (min-width: 360px) and (max-width: 900px){
+    .footer-container {
+      height: 55em;
+      width: 100vw !important;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #c1c1c1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .footer-sub-contr{
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    .follow-ups-links{
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+flex-direction: column;
+    }
+
+   }

@@ -1,0 +1,15 @@
+.main-container{
+    display: flex;
+    height: 162px;
+    width: 777px;
+ border-radius: 6px;
+    
+}
+
+.img-cntr{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 150px;
+}

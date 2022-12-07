@@ -1,0 +1,123 @@
+.header-cntr {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #909090;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .home {
+    color: #00522c;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .header-rectangle {
+    background-image: url(../../Assets/Images/Rectangle\ 1.png);
+    position: absolute;
+    z-index: 1;
+    width: 100% !important;
+    min-height: 11.5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-div-header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10rem 2.5fr 2.5fr 2.5fr 1fr 5rem;
+  }
+  
+  .nav-container-left {
+    display: flex;
+    grid-column: 2/3;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4em;
+  }
+  
+  .user-cntr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    margin-bottom: 4em;
+  }
+  
+  .round-box{
+    border: 1px solid #909090;
+    border-radius: 50%;
+    padding: 0.5em;
+  }
+  
+  .header-img {
+    display: flex;
+    grid-column: 3/4;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5.5em;
+  }
+  
+  .nav-container-right {
+    display: flex;
+    grid-column: 4/5;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
+  }
+  
+  .header-logo {
+    width: 6.2em;
+    min-height: 6.4em;
+    display: flex;
+  }
+
+  .hambergur-menu {
+    display: none;
+  }
+
+  @media (min-width: 360px) and (max-width: 900px) {
+    .header-rectangle {
+      width: 100%;
+      min-height: fit-content;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: #c1c1c1;
+      display: flex;
+    }
+  
+    .hambergur-menu {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    .nav-container-left {
+      display: none;
+    }
+  
+    .nav-container-right {
+      display: none;
+    }
+  
+    .user-cntr{
+     display: none;
+    }
+}

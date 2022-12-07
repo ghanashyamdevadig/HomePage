@@ -5,6 +5,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import Footer from "../Components/Footer/Footer";
+import Header from "../Components/Header/Header";
 
 export default function Home() {
   const [points, setPoints] = useState([
@@ -70,6 +72,30 @@ export default function Home() {
         "https://res.cloudinary.com/dkblvak5a/image/upload/v1669729891/samples/India-Organic_xe8k9u.png",
       content:
         "This certification ensures only raw organic materials were used to manufacture food products in India and is awarded only to organic foods that conform to the National Standards for Organic Products established in 2000",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dkblvak5a/image/upload/v1669818265/USDA-Organic_vybdh6.png",
+      content:
+        "USDA certified products are manufactured without the use of prohibited substances or methods like genetic engineering and using only organic methods of farming without the use of synthetic fertilizers or pesticides. USDA must be renewed annually.",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dkblvak5a/image/upload/v1669818265/HACCP-Certified_ekpixe.png",
+      content:
+        "Hazard Analysis Critical Control Points, is a food safety management system that runs analysis on raw materials from production to consumption of our product to assure food safety.",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dkblvak5a/image/upload/v1669818265/ISO-22000_eerblm.png",
+      content:
+        "The International Organization for Standardization certification regulates the requirements for a food safety management system. This controls food safety hazards and ensures food manufactured is safe for consumption",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dkblvak5a/image/upload/v1669818265/Aditi-Organic_1_jb9dcm.png",
+      content:
+        "ADITI Organic Certifications Pvt. Ltd., ensures the organic authenticity of products from origin to consumption, after rigorous testing and inspection of applied standards and systems in order to meet the requirements of quality, health and safety",
     },
   ]);
 
@@ -157,54 +183,19 @@ export default function Home() {
     return <Card image={item?.image} contents={item.content} />;
   });
 
-  // const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  const [count, setCount] = useState(0);
+
+  const addition = () => {
+    setCount(count + 1);
+  };
+
+  const deletion = () => {
+    setCount(count - 1);
+  };
 
   return (
     <div className="body-cntr">
-      <div className="header-cntr">
-        <div className="header-rectangle">
-          <div className="main-div-header">
-            <div className="nav-container-left">
-              <ul>
-                <li>
-                  <a href="#">HOME</a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="#">OUR FARM</a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="#">PRODUCT</a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="header-img">
-              <img
-                className="header-logo"
-                src={require("../Assets/Images/Moo-Beyond-Logo-Final 1.png")}
-                alt=""
-              />
-            </div>
-
-            <div className="nav-container-right">
-              <ul>
-                <li>
-                  <a href="#">CONTACT US</a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="#">ABOUT US</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+     <Header/>
       <div className="main-back-cntr">
         <Carousel
           showArrows={false}
@@ -254,7 +245,7 @@ export default function Home() {
           </div>
           <div className="ghee-text-main">
             <img
-              className=""
+              className="gheeText"
               src={require("../Assets/Images/Indias No 1.png")}
             />
           </div>
@@ -262,9 +253,18 @@ export default function Home() {
             <button className="order-button-now">ORDER NOW</button>
           </div>
         </div>
+        {/* <div className="shyam">
+          India’s No.1 Trusted A2 ghee, from Farm to Table. Get it Delivered Now!
+        </div> */}
+        {/* <div>
+        <img
+              className="new-ghee-bottle"
+              src={require("../Assets/Images/.png")}
+            />
+        </div> */}
       </div>
       <div className="organic">
-        <h1 className="certified-organic">100% CERTIFIED ORGANIC</h1>
+        <h1 className="certified-organic">100% CERTIFIED & ORGANIC</h1>
         <p className="text-organic-certi">
           Moo Beyond 100% organic A2 ghee comes backed with major testing and
           certifications to verify its authenticity. These certifications matter
@@ -295,17 +295,19 @@ return(
         <div className="add-banner-cntr">
           <div className="banner-lcontr">
             <h2 className="text-3">THE MOO BEYOND EDGE</h2>
-            <p className="text-4">
-              What are the characteristic markers of genuine organic A2 ghee?
-              And how can you verify its authenticity? Let's check the facts,
-              and investigate before we invest. Good A2 ghee can be identified
-              by these essential points. First the verified certifications; many
-              ghee products on the market today falsify claims of authenticity
-              without obtaining verified certifications, unlike Moo Beyond which
-              has gone a mile ahead other products by being the first A2 ghee to
-              have more than 7 certifications
-            </p>
-            <button className="order-now-btn">ORDER NOW</button>
+            <div className="div-exchange">
+              <p className="text-4">
+                What are the characteristic markers of genuine organic A2 ghee?
+                And how can you verify its authenticity? Let's check the facts,
+                and investigate before we invest. Good A2 ghee can be identified
+                by these essential points. First the verified certifications;
+                many ghee products on the market today falsify claims of
+                authenticity without obtaining verified certifications, unlike
+                Moo Beyond which has gone a mile ahead other products by being
+                the first A2 ghee to have more than 7 certifications
+              </p>
+              <button className="order-now-btn">ORDER NOW</button>
+            </div>
           </div>
           <div className="banner-rcontr">
             <div className="banner-image">
@@ -363,22 +365,34 @@ return(
               <h2 style={{ margin: "0", padding: "0" }} className="text-6">
                 ORGANIC A2 COW GHEE
               </h2>
-              <p className="buttur-text">CLARIFIED BUTTER</p>
-              <h2 style={{ margin: "0" }}>&#8377;1200</h2>
-              <p className="buttur-text" style={{ margin: "0" }}>
-                500ml
-              </p>
-              <div className="product-action-contr">
-                <div className="product-counter">
-                  <span className="action" style={{ cursor: "pointer" }}>
-                    -
-                  </span>
-                  <span className="action">1</span>
-                  <span className="action" style={{ cursor: "pointer" }}>
-                    +
-                  </span>
+              <div>
+                <div>
+                  <p className="buttur-text">CLARIFIED BUTTER</p>
+                  <h2 style={{ margin: "0" }}>&#8377;1200</h2>
+                  <p className="buttur-text" style={{ margin: "0" }}>
+                    500ml
+                  </p>
+                  <div className="product-action-contr">
+                    <div className="product-counter">
+                      <span
+                        className="action"
+                        style={{ cursor: "pointer" }}
+                        onClick={deletion}
+                      >
+                        -
+                      </span>
+                      <span className="action">{count}</span>
+                      <span
+                        className="action"
+                        style={{ cursor: "pointer" }}
+                        onClick={addition}
+                      >
+                        +
+                      </span>
+                    </div>
+                    <button className="product-cart-btn">ADD TO CART</button>
+                  </div>
                 </div>
-                <button className="product-cart-btn">ADD TO CART</button>
               </div>
               <div>
                 <p className="point">
@@ -487,107 +501,7 @@ return(
         </div>
       </div>
 
-      <div className="footer-container">
-        <div className="footer-sub-contr">
-          <div>
-            <div>
-              <img
-                className="footer-logo"
-                src={require("../Assets/Images/Moo-Beyond-Logo-Final 1.png")}
-                alt=""
-              />
-            </div>
-            <strong className="text-1">
-              Moo Beyond is an Organic Dairy Brand of Jayalakshmi Farms, India.
-            </strong>
-            <p className="text-2">
-              Our farm is located on the lush grasslands of Mysore, Karnataka
-              region. Our flawless dairy production sets the benchmark of
-              excellence for your everyday happy life.
-            </p>
-          </div>
-        </div>
-        <div className="footer-sub-contr follow-ups-links">
-          <div className="quick-calls">
-            <h3 className="text-8">QUICK LINKS</h3>
-            <div className="polygon-div">
-              <div className="polygon-box">
-                <img
-                  className="polygon"
-                  src={require("../Assets/Images/Polygon 9.png")}
-                  alt=""
-                />
-                <p className="details"> About</p>
-              </div>
-              <div className="polygon-box">
-                <img
-                  className="polygon"
-                  src={require("../Assets/Images/Polygon 9.png")}
-                  alt=""
-                />
-                <p className="details"> Products</p>
-              </div>
-              <div className="polygon-box">
-                <img
-                  className="polygon"
-                  src={require("../Assets/Images/Polygon 9.png")}
-                  alt=""
-                />
-                <p className="details"> Our farm</p>
-              </div>
-              <div className="polygon-box">
-                <img
-                  className="polygon"
-                  src={require("../Assets/Images/Polygon 9.png")}
-                  alt=""
-                />
-                <p className="details"> Contact Us</p>
-              </div>
-              <div className="polygon-box">
-                <img
-                  className="polygon"
-                  src={require("../Assets/Images/Polygon 9.png")}
-                  alt=""
-                />
-                <p className="details"> Policy</p>
-              </div>
-            </div>
-          </div>
-          <div className="reach-us">
-            <h3 className="text-8">REACH US</h3>
-            <img
-              className="contact-us"
-              src={require("../Assets/Images/phone 1.png")}
-              alt=""
-            />
-            <img
-              className="contact-us"
-              src={require("../Assets/Images/Email.png")}
-              alt=""
-            />
-            <img
-              className="contact-us"
-              src={require("../Assets/Images/Location.png")}
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="footer-sub-contr">
-          <h3 className="text-8">FOLLOW US</h3>
-          <div className="follw-icon-contr">
-            <p>1</p>
-            <img
-              className="contact-us"
-              src={require("../Assets/Images/Instagram.png")}
-              alt=""
-            />
-            <p>1</p>
-          </div>
-        </div>
-      </div>
-      <div className="footer-end">
-        <p>© Moo Beyond. All Rights Reserved.</p>
-      </div>
+     <Footer/>
     </div>
   );
 }

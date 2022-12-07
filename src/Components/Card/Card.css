@@ -1,7 +1,7 @@
 .card-contr {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin: 1em;
-    height: 25.5rem;
+    height: 22.5rem;
     border-radius: 1em;
 }
 
@@ -21,6 +21,12 @@
     height: 50%;
     text-align: center;
     padding: 0.5em;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 1em;
+/* letter-spacing: 0.1em; */
+color: rgba(0, 0, 0, 0.8);
 }
 
 .card-text {
@@ -31,4 +37,10 @@ word-spacing:normal;
 
 .footer-sub-contr{
     cursor: pointer;
+}
+
+@media (min-width: 360px) and (max-width: 900px){
+    .card-contr {
+        margin-right: 3em;
+    }
 }
