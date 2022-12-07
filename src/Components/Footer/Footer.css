@@ -3,7 +3,7 @@
     background-image: url(../../Assets/Images/BottomBanner.png);
     background-color: #cccccc;
     /* Used if the image is unavailable */
-    height: 400px;
+    height: 350px;
     width: 100vw !important;
     /* You must set a specified height */
     /* background-position: center; */
@@ -28,7 +28,17 @@
     width: 20%;
     /* background-color: goldenrod; */
   }
+
   .footer-sub-contr {
+    height: 15rem;
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+  }
+
+  .footer-sub-contr1{
     height: 15rem;
     width: 50%;
     text-align: left;
@@ -129,10 +139,10 @@
 
    @media (min-width: 360px) and (max-width: 900px){
     .footer-container {
-      height: 55em;
+      height: 58em;
       width: 100vw !important;
-      background-repeat: no-repeat;
-      background-size: cover;
+      background-repeat:no-repeat;
+      background-size:cover;
       background-color: #c1c1c1;
       display: flex;
       justify-content: flex-start;
@@ -141,15 +151,36 @@
 
     .footer-sub-contr{
       display: flex;
-      justify-content: flex-start;
+      /* flex-direction: column; */
+      justify-content: flex-start !important;
       width: 100%;
+      flex-direction: column !important;
+      text-align: left;
+      height: 100% ;
     }
 
-    .follow-ups-links{
-      width: 100%;
+    .footer-sub-contr1{
       display: flex;
-      justify-content: flex-start;
-flex-direction: column;
+      justify-content: flex-start !important;
+      width: 100%;
+      flex-direction: column !important;
+      text-align: left;
+      height: 100% ;
+      margin-bottom: 2em;
     }
 
+    .text-8 {
+      justify-content: flex-start;
+    }
+
+    .follw-icon-contr{
+      display: flex;
+justify-content: flex-start;
+    }
+
+    .reach-us,
+    .quick-calls {
+      margin-left: 0;
+      cursor: pointer;
+    }
    }

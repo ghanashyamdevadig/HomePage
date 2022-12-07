@@ -93,7 +93,7 @@ export default function Footer() {
             />
           </div>
         </div>
-        <div className="footer-sub-contr">
+        <div  className="footer-sub-contr1">
           <h3 className="text-8">FOLLOW US</h3>
           <div className="follw-icon-contr">
             <div className="social-face">
