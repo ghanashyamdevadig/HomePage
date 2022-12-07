@@ -7,6 +7,8 @@ import {
     UserOutlined,
   } from "@ant-design/icons";
 
+// import { Avatar, Badge, Space } from 'antd';
+
 export default function Header() {
   return (
     <div className="header-cntr">
@@ -58,6 +60,7 @@ export default function Header() {
         <div className="user-cntr">
           <div className="round-box">
             <ShoppingCartOutlined />
+          
           </div>
           <div className="round-box">
             <HeartFilled />
