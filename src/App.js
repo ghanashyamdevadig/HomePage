@@ -9,6 +9,7 @@ import {
   Routes, //replaces "Switch" used till v5
   Route,
 } from "react-router-dom";
+import Address from "./Pages/Address/Address";
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="cart" element={< MyCart />} />
           <Route exact path="SavedAddress" element={< SavedAddress />} />
+          <Route exact path="Address" element={< Address />} />
         </Routes>
       </BrowserRouter>
     </div>

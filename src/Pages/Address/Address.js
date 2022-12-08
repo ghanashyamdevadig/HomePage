@@ -1,5 +1,6 @@
 import React from 'react'
-import Form from '../../components/Form/Form'
+import Form from '../../Components/AddressForm/Form'
+
 
 export default function Address() {
   return (
@@ -7,8 +8,8 @@ export default function Address() {
       <div style={{width:"50%",display:"flex",justifyContent:"center", border: "1px solid lightgray",}}>
         
       <div style={{width:"60%"}}>
-        
-        <Form/>
+      
+      <Form/>
         </div>
       </div>
     </div>
